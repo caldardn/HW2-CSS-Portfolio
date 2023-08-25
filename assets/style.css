@@ -4,7 +4,57 @@
     margin: 0;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
-header{
+
+body{
+    background-color: maroon;
+}
+
+
+ header{
+   
+    color: white;
+    
+} 
+
+.main_header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    color: white;
+    justify-content: space-between;
+
+}
+
+header nav li{
+    display: inline; 
+   
+}
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: lightgrey;
+    padding: 5px 10px;
+    border-radius: 10px ;
+}
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: white;
+}
+
+
+
+
+main section{
+    position: relative;
+}
+.title{
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,24 +62,50 @@ header{
     
 }
 
-nav ul li{
-    display: inline;
+
+section header{
+    display: flex;
+    background-color: lightgrey;
+    color: black;
+    border-radius: 20px 0 20px 0;
     
- 
-}
-
-a{
-    text-decoration: none;
 }
 
 
-figure{
-    height: 100px;
-     margin-left: auto;
-     margin-right: auto;
-    margin-bottom: 300px;
+
+
+p, footer{
+   background-color: lightgray;
 }
 
-p{
-    background-color: beige;
+footer a{
+    color: black;
 }
+
+.row{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.column{
+    flex: 22%;
+    flex-wrap: wrap;
+    margin-left: 5px;margin-right: 5px;
+    margin-top: 5px
+  }
+  
+.main_project{
+    align-content: center;
+}
+
+  img {
+    max-width: 300px;
+    max-height: 300px;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 20px;
+    
+    
+  }

@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="assets/style.css" />
     <title>DNC Digital Portfolio</title>
   </head>
+
   <body>
-    <header>
+    <header class="main_header">
       <h1>David Norman Caldarone</h1>
       <nav>
         <ul>
@@ -23,13 +24,12 @@
     <figure>
       <img
         src="./assets/images/IMG_0073.jpeg"
-        width="250"
         alt="front face profile image of David "
       />
     </figure>
 
     <main>
-      <section id="#about_Me">
+      <section id="about_Me">
         <h2>About me</h2>
         <p>
           I am a reliable and detail-oriented QA Auditor II seeking to advance
@@ -41,52 +41,67 @@
         </p>
       </section>
 
-      <section id="#my_Projects">
+      <section id="my_Projects">
         <h2>My Projects</h2>
-
-        <header>Horiseon Refactor</header>
+      <div class="main_project">
+        <header class="title">Horiseon Refactor</header>
         <a href="https://caldardn.github.io/HW1-code-refactor/">
           <img
-            src="./assets/images/01-html-css-git-homework-demo.png"
+            src="./assets/images/Horiseon web page.png"
             alt="DNC's 1st project with Horiseon"
           />
         </a>
+      </div>
 
-        <header>Black Jack Game</header>
-        <a href="https://caldardn.github.io/black-jack-game/">
-          <img
-            src="./assets/images/Blackjack-hand.jpg"
-            alt="Someone showing an Ace and King of Spades in a game of Black Jack"
-          />
-        </a>
+        <div class="row">
+          <div class="column">
+          <header class="title">Black Jack Game</header>
+          <a href="https://caldardn.github.io/black-jack-game/">
+            <img
+              src="./assets/images/Blackjack-hand.jpg"
+              alt="Someone showing an Ace and King of Spades in a game of Black Jack"
+            />
+          </a>
+           </div>
 
-        <header>Counter</header>
-        <a href="https://caldardn.github.io/Counter/">
-          <img
-            src="./assets/images/number counter.jpg"
-            alt="A counter that has the numbers increasing in value"
-          />
-        </a>
+          <!-- look at the width of the counter image -->
+          <div class="column">
+          <header class="title">Counter</header>
+          <a href="https://caldardn.github.io/Counter/">
+            <img
+              src="./assets/images/number counter.jpg"
+              width="1500"
+              alt="A counter that has the numbers increasing in value"
+            />
+          </a>
+          </div>  
 
-        <header>Prework Study Guide</header>
-        <a href="https://caldardn.github.io/prework-study-guide/">
-          <img
-            src="./assets/images/Prework Study Guide.png"
-            alt="A web site shwoing notes on HTML, CSS, Git, and Javascript"
-          />
-        </a>
+          <div class="column">
+          <header class="title">Prework Study Guide</header>
+          <a href="https://caldardn.github.io/prework-study-guide/">
+            <img
+          
+              src="./assets/images/Prework Study Guide.png"
+              alt="A web site shwoing notes on HTML, CSS, Git, and Javascript"
+            />
+          </a>
+          </div>
 
-        <header>Chrome Extension</header>
-        <a href="https://chrome.google.com/webstore/category/extensions">
-          <img
-            src="./assets/images/chrome-extensions-1.png"
-            alt="The Chrome icon with extensions pluged into it"
-          />
-        </a>
+          <div class="column">
+          <header class="title">Chrome Extension</header>
+          <a href="https://chrome.google.com/webstore/category/extensions">
+            <img
+              src="./assets/images/chrome-extensions-1.png"
+              alt="The Chrome icon with extensions pluged into it"
+            />
+          </a>
+        </div>
+      </div>
+
       </section>
     </main>
 
-    <footer id="#contact_Me">
+    <footer id="contact_Me">
       <h3>Contact Me</h3>
       <a href="mailto:caldardn@gmail.com" class="email">Email</a>
       <a href="www.linkedin.com/in/david-caldarone-051563125" class="linkedin"
