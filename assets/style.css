@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 20px;
+    
+}
+
+nav ul li{
+    display: inline;
+    
+}
+a{
+    text-decoration: none;
+}
+
+
+figure{
+    height: 100px;
+  
+    margin-bottom: 300px;
+}
