@@ -3,6 +3,7 @@
 ## Description 
 
 This week’s challenge was to create a digital profile to showcase my skills and talents to employers looking to fill a part-time or full-time position. The challenge is to show the use of flexbox, media queries, and CSS variables. The following were the acceptance criteria of the challenge: 
+
 •	When the portfolio is loaded my name, profile picture, links to an about me section, contact info, and my projects.
 •	Links in the navigation bar will go to the corresponding section
 •	The first application will be larger than the rest
@@ -11,9 +12,7 @@ This week’s challenge was to create a digital profile to showcase my skills an
 
 ## Application
 
-<img src="./assets/images/website image.png"
-alt="Image of the deployed portfolio application "
->
+<img src="./assets/images/website image.png" alt="Image of the deployed portfolio application ">
 
 ## Credits
 
