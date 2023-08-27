@@ -1,111 +1,186 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-body{
-    background-color: maroon;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 
- header{
-   
-    color: white;
-    
-} 
 
-.main_header{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px;
-    color: white;
-    justify-content: space-between;
+body {
+/* background-image: linear-gradient(45deg, rgb(100, 0, 0), lightgrey); */
 
+
+   background-color: rgb(100, 0, 0); 
 }
 
-header nav li{
-    display: inline; 
-   
-}
-nav a{
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    background-color: lightgrey;
-    padding: 5px 10px;
-    border-radius: 10px ;
+/* The h1 header and the nav links */
+
+.main_header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  justify-content: space-between;
 }
 
-h1{
+h1 {
     font-size: 2rem;
     margin-bottom: 20px;
-}
-
-h2{
-    color: white;
-}
-
-
-
-
-main section{
-    position: relative;
-}
-.title{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px 20px;
-    
-}
-
-
-section header{
-    display: flex;
-    background-color: lightgrey;
-    color: black;
-    border-radius: 20px 0 20px 0;
-    
-}
-
-
-
-
-p, footer{
-   background-color: lightgray;
-}
-
-footer a{
-    color: black;
-}
-
-.row{
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center
-}
-
-.column{
-    flex: 22%;
-    flex-wrap: wrap;
-    margin-left: 5px;margin-right: 5px;
-    margin-top: 5px
+    color: white
   }
-  
-.main_project{
-    align-content: center;
+
+
+header, nav, li {
+  display: inline;
+}
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  background-color: lightgrey;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
-  img {
-    max-width: 300px;
-    max-height: 300px;
+/* the main profile picture */
+
+figure img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 400px;
     padding: 10px;
     background-color: lightgray;
     border-radius: 20px;
-    
-    
+
+}
+
+/* the about me and My projects title */
+
+#about_Me h2,
+#my_Projects h2 {
+  background-color: rgb(187, 158, 119);
+  color: black;
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 100px 10px 20px 10px;
+}
+
+/* The paragraph in the about me section */
+p{
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-left: 10% ;
+    margin-right: 10% ;
+    border-radius: 20px;
+ 
+}
+
+/* The header for the projects */
+
+ /* main, section {
+  position: relative;
+} */
+
+
+
+.title {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 15px 20px;
+  
+} 
+
+section .row header {
+  display: flex;
+  background-color: lightgrey;
+  color: black;
+  border-radius: 20px;
+  margin-top: 20px;
+
+}
+section .title{
+    display: flex;
+    background-color: lightgrey;
+  color: black;
+  border-radius: 20px;
+}
+
+
+  
+
+/* The links to the my projects */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+ .column {
+  
+  flex-wrap: wrap;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  
+} 
+
+
+
+/* The main & project picture */
+
+#my_project .main_project, img{
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: center;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 20px;
+  
+}
+
+ .row img {
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 20px;
+  margin-top: 20px;
+  
+}
+
+
+
+
+  /*background for the footer and paragrpagh  */
+
+
+
+  footer, a, p {
+    color: black;
+    background-color: lightgray;
+  }
+  
+  footer{
+      display: flex;
+      display:inline-block;
+      padding: 8px 15px 8px 15px;
+      margin-top: 5px;
+      border-radius: 20px 20px 0 0;
+     
+     
+  }
+  #contact_Me, h3{
+      text-align: center;
+      padding-bottom: 10px ;
+     
   }
