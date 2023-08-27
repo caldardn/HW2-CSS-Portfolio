@@ -6,6 +6,13 @@
     "Lucida Sans", Arial, sans-serif;
 }
 
+/*  */
+
+:root{
+  --imagebackground: lightgrey;
+
+}
+
 body {
   /* background-image: linear-gradient(45deg, rgb(100, 0, 0), lightgrey); */
 
@@ -36,7 +43,7 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   color: black;
-  background-color: lightgrey;
+  background-color: var(--imagebackground);
   padding: 5px 10px;
   border-radius: 10px;
 }
@@ -47,7 +54,7 @@ nav a {
   margin-right: auto;
   width: 30%;
   padding: 10px;
-  background-color: lightgray;
+  background-color: var(--imagebackground);
   border-radius: 20px;
 }
 
@@ -66,7 +73,7 @@ nav a {
 /* The paragraph in the about me section */
 p {
   color: black;
-  background-color: lightgray;
+  background-color: var(--imagebackground);
   padding: 10px;
   font-size: 1.5rem;
   margin-left: 10%;
@@ -78,7 +85,7 @@ p {
   display: block;
   position: relative;
   text-align: center;
-  background-color: lightgrey;
+  background-color: var(--imagebackground);
   border-radius: 20px 20px 0 0;
   top: 20px;
   font-weight: bold;
@@ -88,7 +95,7 @@ p {
   height: auto;
   max-width: 100%;
   width: 1500px;
-  background-color: lightgrey;
+  background-color: var(--imagebackground);
   padding: 10px;
   border-radius: 20px;
 }
@@ -113,7 +120,7 @@ p {
   display: block;
   position: relative;
   text-align: center;
-  background-color: lightgrey;
+  background-color: var(--imagebackground);
   top: 40px;
   border-radius: 20px 20px 0 0;
   font-weight: bold;
@@ -122,7 +129,7 @@ p {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .column {
@@ -136,7 +143,7 @@ p {
   width: 400px;
   height: 300px;
   padding: 10px;
-  background-color: lightgray;
+  background-color: var(--imagebackground);
   border-radius: 20px;
   margin-top: 20px;
 }
@@ -157,17 +164,30 @@ footer {
 footer a {
   color: black;
 }
+
+
+
+
+
 @media screen and (max-width: 500px) {
   #about_me p {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 736px) {
+
+
+@media screen and (max-width: 800px) {
   #profile {
     width: 90%;
   }
   .main_header {
+    flex-direction: column;
     text-align: center;
     justify-content: center;
   }
+}
+
+@media screen and (max-width: 530px) {
+
+
 }
