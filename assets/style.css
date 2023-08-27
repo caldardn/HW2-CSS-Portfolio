@@ -6,13 +6,10 @@
     "Lucida Sans", Arial, sans-serif;
 }
 
-
-
 body {
-/* background-image: linear-gradient(45deg, rgb(100, 0, 0), lightgrey); */
+  /* background-image: linear-gradient(45deg, rgb(100, 0, 0), lightgrey); */
 
-
-   background-color: rgb(100, 0, 0); 
+  background-color: rgb(100, 0, 0);
 }
 
 /* The h1 header and the nav links */
@@ -25,13 +22,14 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: white
-  }
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
 
-
-header, nav, li {
+header,
+nav,
+li {
   display: inline;
 }
 nav a {
@@ -43,24 +41,20 @@ nav a {
   border-radius: 10px;
 }
 
-/* the main profile picture */
-
-figure img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 500px;
-    width: 400px;
-    padding: 10px;
-    background-color: lightgray;
-    border-radius: 20px;
-
+#profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding: 10px;
+  background-color: lightgray;
+  border-radius: 20px;
 }
 
 /* the about me and My projects title */
 
-#about_Me h2,
-#my_Projects h2 {
+#about_me h2,
+#my_projects h2 {
   background-color: rgb(187, 158, 119);
   color: black;
   padding: 20px 20px 20px 20px;
@@ -70,50 +64,60 @@ figure img{
 }
 
 /* The paragraph in the about me section */
-p{
-    padding: 10px;
-    font-size: 1.5rem;
-    margin-left: 10% ;
-    margin-right: 10% ;
-    border-radius: 20px;
- 
+p {
+  color: black;
+  background-color: lightgray;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 20px;
 }
 
-/* The header for the projects */
-
- /* main, section {
+#main_title {
+  display: block;
   position: relative;
-} */
+  text-align: center;
+  background-color: lightgrey;
+  border-radius: 20px 20px 0 0;
+  top: 20px;
+  font-weight: bold;
+}
 
+#main_image {
+  height: auto;
+  max-width: 100%;
+  width: 1500px;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 20px;
+}
+#row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
+#column {
+  flex-wrap: wrap;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+/* Section for the Black Jack, counter, Prework, and Chrome links*/
 
 .title {
+  display: block;
   position: relative;
-  display: flex;
-  flex-direction: row;
-  padding: 15px 20px;
-  
-} 
-
-section .row header {
-  display: flex;
+  text-align: center;
   background-color: lightgrey;
-  color: black;
-  border-radius: 20px;
-  margin-top: 20px;
-
+  top: 40px;
+  border-radius: 20px 20px 0 0;
+  font-weight: bold;
 }
-section .title{
-    display: flex;
-    background-color: lightgrey;
-  color: black;
-  border-radius: 20px;
-}
-
-
-  
-
-/* The links to the my projects */
 
 .row {
   display: flex;
@@ -121,66 +125,49 @@ section .title{
   justify-content: space-around;
 }
 
- .column {
-  
+.column {
   flex-wrap: wrap;
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 5px;
-  
-} 
-
-
-
-/* The main & project picture */
-
-#my_project .main_project, img{
-    display: flex;
-    flex-wrap: wrap;
-   
-    justify-content: center;
-    height: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    background-color: lightgray;
-    border-radius: 20px;
-  
 }
 
- .row img {
+.row img {
   width: 400px;
   height: 300px;
   padding: 10px;
   background-color: lightgray;
   border-radius: 20px;
   margin-top: 20px;
-  
 }
 
+/* footer */
 
+footer {
+  display: flex;
+  background-color: lightgray;
+  text-align: center;
+  justify-content: center;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 20px;
+  border-radius: 20px 20px 0 0;
+}
 
-
-  /*background for the footer and paragrpagh  */
-
-
-
-  footer, a, p {
-    color: black;
-    background-color: lightgray;
+footer a {
+  color: black;
+}
+@media screen and (max-width: 500px) {
+  #about_me p {
+    font-size: 20px;
   }
-  
-  footer{
-      display: flex;
-      display:inline-block;
-      padding: 8px 15px 8px 15px;
-      margin-top: 5px;
-      border-radius: 20px 20px 0 0;
-     
-     
+}
+@media screen and (max-width: 736px) {
+  #profile {
+    width: 90%;
   }
-  #contact_Me, h3{
-      text-align: center;
-      padding-bottom: 10px ;
-     
+  .main_header {
+    text-align: center;
+    justify-content: center;
   }
+}
