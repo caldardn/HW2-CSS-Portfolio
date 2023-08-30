@@ -17,8 +17,7 @@ This week’s challenge was to create a digital profile to showcase my skills an
 ## Application
 
 <img src="./assets/images/website image.png"
-alt="Image of the deployed portfolio application "
->
+alt="Image of the deployed portfolio application ">
 
 ## Credits
 
