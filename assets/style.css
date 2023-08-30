@@ -1,22 +1,26 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
+/* Repeated variables */
 
-/*  */
-
-:root{
+:root {
   --imagebackground: lightgrey;
-
+  --dark: rgb(100, 0, 0);
+  --shadow: hsl(0, 0%, 0%);
+  --glow: white;
 }
+
+/* Allows the screen to scroll when nav links are selected */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* The background color of the webpage */
 
 body {
-  /* background-image: linear-gradient(45deg, rgb(100, 0, 0), lightgrey); */
-
-  background-color: rgb(100, 0, 0);
+  background-image: linear-gradient(
+    0.25turn,
+    var(--imagebackground),
+    var(--dark)
+  );
 }
 
 /* The h1 header and the nav links */
@@ -26,12 +30,17 @@ body {
   flex-wrap: wrap;
   padding: 30px;
   justify-content: space-between;
+  border-radius: 0 0 20px 20px;
+  background-color: var(--imagebackground);
+  margin-bottom: 35px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 h1 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: white;
+  color: var(--dark);
 }
 
 header,
@@ -39,135 +48,158 @@ nav,
 li {
   display: inline;
 }
+
 nav a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
-  background-color: var(--imagebackground);
+  color: var(--glow);
+  background-color: var(--dark);
   padding: 5px 10px;
   border-radius: 10px;
+  box-shadow: 5px 5px 5px var(--shadow);
 }
+
+nav a:hover {
+  color: var(--dark);
+  background-color: var(--glow);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--shadow);
+}
+
+nav ul li a:active {
+  font-size: 12px;
+}
+
+/* The profile picture */
 
 #profile {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: 30%;
   padding: 10px;
   background-color: var(--imagebackground);
   border-radius: 20px;
+  box-shadow: 10px 10px 5px var(--shadow);
+  border-style: solid;
+  border-width: 1px;
 }
 
 /* the about me and My projects title */
 
 #about_me h2,
 #my_projects h2 {
-  background-color: rgb(187, 158, 119);
+  background-color: hsl(34, 33%, 60%);
   color: black;
   padding: 20px 20px 20px 20px;
-  text-align: center;
+  margin: 100px auto 20px Auto;
+  max-width: 50%;
   border-radius: 20px;
-  margin: 100px 10px 20px 10px;
+  text-align: center;
+  font-size: 2rem;
+  border-style: solid;
+  border-width: 1px;
 }
 
 /* The paragraph in the about me section */
 p {
-  color: black;
   background-color: var(--imagebackground);
   padding: 10px;
   font-size: 1.5rem;
   margin-left: 10%;
   margin-right: 10%;
   border-radius: 20px;
+  box-shadow: 10px 10px 5px var(--shadow);
+  border-style: solid;
+  border-width: 1px;
 }
 
-#main_title {
+/* The header for the main project and the secondary projects*/
+
+#main_title,
+.title {
   display: block;
-  position: relative;
   text-align: center;
-  background-color: var(--imagebackground);
-  border-radius: 20px 20px 0 0;
-  top: 20px;
   font-weight: bold;
 }
 
+/* Main displayed project */
+
+#row {
+  display: flex;
+  justify-content: center;
+}
+
+#card {
+  background-color: var(--imagebackground);
+  border-radius: 50px;
+  padding: 10px;
+  margin: 5px 5px 5px 5px;
+}
+
 #main_image {
-  height: auto;
   max-width: 100%;
   width: 1500px;
   background-color: var(--imagebackground);
   padding: 10px;
   border-radius: 20px;
 }
-#row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-#column {
-  flex-wrap: wrap;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 5px;
-}
 
 /* Section for the Black Jack, counter, Prework, and Chrome links*/
-
-.title {
-  display: block;
-  position: relative;
-  text-align: center;
-  background-color: var(--imagebackground);
-  top: 40px;
-  border-radius: 20px 20px 0 0;
-  font-weight: bold;
-}
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.column {
-  flex-wrap: wrap;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 5px;
+.card {
+  background-color: var(--imagebackground);
+  border-radius: 50px;
+  padding: 10px;
+  margin-top: 30px;
 }
 
 .row img {
+  
   width: 400px;
   height: 300px;
   padding: 10px;
   background-color: var(--imagebackground);
   border-radius: 20px;
-  margin-top: 20px;
+}
+
+.card,
+#card {
+  border: 1px solid var(--shadow);
+  box-shadow: 10px 10px 5px var(--shadow);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover,
+#card:hover {
+  box-shadow: 0 0 45px var(--glow);
 }
 
 /* footer */
 
 footer {
-  display: flex;
-  background-color: lightgray;
+  background-color: var(--imagebackground);
   text-align: center;
   justify-content: center;
-  margin-right: 20%;
-  margin-left: 20%;
-  margin-top: 20px;
+  margin: 50px 20% 0 20%;
   border-radius: 20px 20px 0 0;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 footer a {
-  color: black;
+  color: var(--shadow);
+  font-weight: bold;
 }
 
-
-
-
+/* media queries that adapt the webpage to different screen sizes*/
 
 @media screen and (max-width: 500px) {
   #about_me p {
@@ -175,8 +207,7 @@ footer a {
   }
 }
 
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #profile {
     width: 90%;
   }
@@ -188,6 +219,9 @@ footer a {
 }
 
 @media screen and (max-width: 530px) {
-
-
+  .card img {
+    width: 250px;
+    height: 150px;
+    transition: width 1s, height 1s;
+  }
 }

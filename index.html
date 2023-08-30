@@ -1,117 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/reset.css" />
-    <link rel="stylesheet" href="assets/images/" />
-    <link rel="stylesheet" href="assets/style.css" />
-    <title>DNC Digital Portfolio</title>
-  </head>
 
-  <body>
-    <header class="main_header">
-      <h1>David Norman Caldarone</h1>
-      <nav>
-        <ul>
-          <li><a href="#about_me">About Me</a></li>
-          <li><a href="#my_projects">My Projects</a></li>
-          <li><a href="#contact_me">Contact Me</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/reset.css" />
+  <link rel="stylesheet" href="assets/images/" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <title>DNC Digital Portfolio</title>
+</head>
 
-    <figure>
-      <img
-        id="profile"
-        src="./assets/images/IMG_0073.jpeg"
-        alt="front face profile image of David "
-      />
-    </figure>
+<body>
+  <header class="main_title">
+    <h1>David Norman Caldarone</h1>
+    <nav>
+      <ul>
+        <li><a href="#about_me">About Me</a></li>
+        <li><a href="#my_projects">My Projects</a></li>
+        <li><a href="#contact_me">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-      <section id="about_me">
-        <h2>About me</h2>
-        <p>
-          I am a reliable and detail-oriented QA Auditor II seeking to advance
-          my career as a Junior Web Developer. I possess a diverse background of
-          clinical laboratory and QA auditing experiences through which I have
-          gained several valuable skills in GCP audits, managing complex
-          relationships, and juggling priorities. I am a motivated team player
-          that excels in communication, problem solving, and time management.
-        </p>
-      </section>
+  <figure>
+    <img id="profile" src="./assets/images/IMG_0073.jpeg" alt="front face profile image of David " />
+  </figure>
 
-      <section id="my_projects">
-        <h2>My Projects</h2>
-    <div id="row">
-      <div id="column">
-        <header id="main_title">Horiseon Refactor</header>
-        <a href="https://caldardn.github.io/HW1-code-refactor/">
-          <img
-            id="main_image"
-            src="./assets/images/Horiseon web page.png"
-            alt="DNC's 1st project with Horiseon"
-          />
-        </a>
-      </div>
-    </div>
+  <main>
+    <section id="about_me">
+      <h2>About me</h2>
+      <p>
+        I am a reliable and detail-oriented QA Auditor II seeking to advance
+        my career as a Junior Web Developer. I possess a diverse background of
+        clinical laboratory and QA auditing experiences through which I have
+        gained several valuable skills in GCP audits, managing complex
+        relationships, and juggling priorities. I am a motivated team player
+        that excels in communication, problem solving, and time management.
+      </p>
+    </section>
 
-        <div class="row">
-          <div class="column">
-          <header class="title">Black Jack Game</header>
-          <a href="https://caldardn.github.io/black-jack-game/">
-            <img
-              src="./assets/images/Blackjack-hand.jpg"
-              alt="Someone showing an Ace and King of Spades in a game of Black Jack"
-            />
-          </a>
-           </div>
-
-          <div class="column">
-          <header class="title">Counter</header>
-          <a href="https://caldardn.github.io/Counter/">
-            <img
-              src="./assets/images/number counter.jpg"
-              alt="A counter that has the numbers increasing in value"
-            />
-          </a>
-          </div>  
-
-          <div class="column">
-          <header class="title">Prework Study Guide</header>
-          <a href="https://caldardn.github.io/prework-study-guide/">
-            <img
-          
-              src="./assets/images/tumblr_o1y663ZOCO1u7j42wo1_1280.jpg"
-              alt="A page showing tips on how to study with different topics displayed"
-            />
-          </a>
-          </div>
-
-          <div class="column">
-          <header class="title">Chrome Extension</header>
-          <a href="https://chrome.google.com/webstore/category/extensions">
-            <img
-              src="./assets/images/chrome-extensions-1.png"
-              alt="The Chrome icon with extensions plugged into it"
-              
-            />
+    <!-- big image -->
+    <section id="my_projects">
+      <h2>My Projects</h2>
+      <div id="row">
+        <div id="card">
+          <title id="main_title">Horiseon Refactor</title>
+          <a href="https://caldardn.github.io/HW1-code-refactor/">
+            <img id="main_image" src="./assets/images/Horiseon web page.png" alt="DNC's 1st project with Horiseon" />
           </a>
         </div>
       </div>
 
-      </section>
-    </main>
+      <div class="row">
+        <div class="card">
+          <title class="title">Black Jack Game</title>
+          <a href="https://caldardn.github.io/black-jack-game/">
+            <img src="./assets/images/Blackjack-hand.jpg"
+              alt="Someone showing an Ace and King of Spades in a game of Black Jack" />
+          </a>
+        </div>
 
-    <footer>
+        <div class="card">
+          <title class="title">Counter</title>
+          <a href="https://caldardn.github.io/Counter/">
+            <img src="./assets/images/number counter.jpg" alt="A counter that has the numbers increasing in value" />
+          </a>
+        </div>
+
+        <div class="card">
+          <title class="title">Prework Study Guide</title>
+          <a href="https://caldardn.github.io/prework-study-guide/">
+            <img src="./assets/images/tumblr_o1y663ZOCO1u7j42wo1_1280.jpg"
+              alt="A page showing tips on how to study with different topics displayed" />
+          </a>
+        </div>
+
+        <div class="card">
+          <title class="title">Chrome Extension</title>
+          <a href="https://chrome.google.com/webstore/category/extensions">
+            <img src="./assets/images/chrome-extensions-1.png" alt="The Chrome icon with extensions plugged into it" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
     <div id="contact_me">
       <h3>Contact Me</h3>
       <a href="mailto:caldardn@gmail.com" class="email">Email</a> <strong>•</strong>
-      <a href="www.linkedin.com/in/david-caldarone-051563125" class="linkedin"
-        >LinkedIn</a> <strong>•</strong>
-      <a href="804-931-4822" class="phone">Phone</a>
-    </footer>
+      <a href="https://linkedin.com/in/david-caldarone-051563125" class="linkedin">LinkedIn</a> <strong>•</strong>
+      <a href="tel:+18049314822" class="phone">Phone: 804-931-4822</a>
+  </footer>
   </div>
-  </body>
+</body>
+
 </html>
