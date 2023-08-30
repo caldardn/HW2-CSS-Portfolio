@@ -90,7 +90,7 @@ nav ul li a:active {
 #about_me h2,
 #my_projects h2 {
   background-color: hsl(34, 33%, 60%);
-  color: black;
+  color: var(--shadow);
   padding: 20px 20px 20px 20px;
   margin: 100px auto 20px Auto;
   max-width: 50%;
@@ -168,6 +168,8 @@ p {
   background-color: var(--imagebackground);
   border-radius: 20px;
 }
+
+/* applying the box shadow and glow effects */
 
 .card,
 #card {
