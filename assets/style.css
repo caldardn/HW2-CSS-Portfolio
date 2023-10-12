@@ -154,6 +154,8 @@ p {
 }
 
 .card {
+  /* height: 300px; */
+  flex: 0 1 400px;
   background-color: var(--imagebackground);
   border-radius: 50px;
   padding: 10px;
@@ -161,9 +163,9 @@ p {
 }
 
 .row img {
-  
-  width: 400px;
-  height: 300px;
+  object-fit: cover;
+  width: 100%;
+ height: 300px;
   padding: 10px;
   background-color: var(--imagebackground);
   border-radius: 20px;
@@ -220,10 +222,10 @@ footer a {
   }
 }
 
-@media screen and (max-width: 530px) {
+/* @media screen and (max-width: 530px) {
   .card img {
     width: 250px;
     height: 150px;
     transition: width 1s, height 1s;
   }
-}
+} */
