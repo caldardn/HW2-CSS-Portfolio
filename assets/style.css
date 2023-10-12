@@ -223,7 +223,7 @@ footer a {
 }
 
 /* @media screen and (max-width: 530px) {
-  .card img {
+  .card img, .row {
     width: 250px;
     height: 150px;
     transition: width 1s, height 1s;
