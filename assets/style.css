@@ -222,10 +222,17 @@ footer a {
   }
 }
 
-/* @media screen and (max-width: 530px) {
-  .card img, .row {
+@media screen and (max-width: 530px) {
+  .card img {
     width: 250px;
     height: 150px;
     transition: width 1s, height 1s;
   }
-} */
+}
+
+@media screen and (max-width: 530px) {
+  .card {
+    max-width: 280px;
+    transition: width 1s
+  }
+}
